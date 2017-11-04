@@ -1,0 +1,87 @@
+{
+  "name": "markdown2html-less",
+  "version": "0.0.1",
+  "description": "A parser of Markdown and a render to html,  Which needs to be previewed in a browser",
+  "license": "MIT",
+  "repository": "https://github.com/searKing/markdown2html-less",
+  "bugs": "https://github.com/searKing/markdown2html-less/issues",
+  "homepage": "https://github.com/searKing/markdown2html-less/blob/master/README.md",
+  "author": {
+    "name": "Haixin Chen",
+    "email": "471030698@qq.com",
+    "url": "https://github.com/searKing"
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "markdown-it"
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib && rimraf coverage",
+    "format": "prettier --write \"{src,__tests__}/**/*.ts\" --single-quote --trailing-comma es5",
+    "lint": "tslint --force --format verbose \"src/**/*.ts\"",
+    "prepare": "npm run build",
+    "prebuild": "npm run clean && npm run format && npm run lint && echo Using TypeScript && tsc --version",
+    "build": "tsc --pretty",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "watch": "npm run build -- --watch",
+    "watch:test": "jest --watch"
+  },
+  "dependencies": {
+    "file-url": "^2.0.2",
+    "lodash": "^4.17.4",
+    "markdown-it": "^8.4.0",
+    "markdown-it-abbr": "^1.0.4",
+    "markdown-it-anchor": "^4.0.0",
+    "markdown-it-attrs": "^1.2.0",
+    "markdown-it-container": "^2.0.0",
+    "markdown-it-deflist": "^2.0.3",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-expand-tabs": "^1.0.12",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-highlightjs": "^3.0.0",
+    "markdown-it-ins": "^2.0.0",
+    "markdown-it-lazy-headers": "^0.1.3",
+    "markdown-it-mark": "^2.0.0",
+    "markdown-it-mermaid-less": "^0.0.1",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "markdown-it-task-lists": "^2.1.0",
+    "mermaid": "^7.1.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.82",
+    "@types/node": "^8.0.47",
+    "coveralls": "^3.0.0",
+    "jest": "^20.0.4",
+    "jest-environment-node-debug": "^2.0.0",
+    "prettier": "^1.7.4",
+    "rimraf": "^2.0.0",
+    "ts-jest": "^21.1.4",
+    "ts-node": "^3.2.0",
+    "tslint": "^5.8.0",
+    "tslint-config-prettier": "^1.6.0",
+    "typescript": "^2.6.1"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "jest": {
+    "transform": {
+      ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testEnvironment": "node"
+  }
+}
