@@ -1,6 +1,6 @@
 {
   "name": "markdown2html-less",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "A parser of Markdown and a render to html,  Which needs to be previewed in a browser",
   "license": "MIT",
   "repository": "https://github.com/searKing/markdown2html-less",
