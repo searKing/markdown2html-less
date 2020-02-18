@@ -6,7 +6,7 @@
     },
     "extends": [
         "google",
-        "tslint-config-prettier"
+        "eslint-config-prettier"
     ],
     "globals": {
         "Atomics": "readonly",
