@@ -1,6 +1,6 @@
 {
   "name": "markdown2html-less",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A parser of Markdown and a render to html,  Which needs to be previewed in a browser",
   "license": "MIT",
   "repository": "https://github.com/searKing/markdown2html-less",
@@ -24,7 +24,7 @@
   "scripts": {
     "clean": "rimraf lib && rimraf coverage",
     "format": "prettier --write \"{src,__tests__}/**/*.ts\" --single-quote --trailing-comma es5",
-    "lint": "eslint --format verbose \"src/**/*.ts\"",
+    "lint": "tslint --force --format verbose \"src/**/*.ts\"",
     "prepare": "npm run build",
     "prebuild": "npm run clean && npm run format && npm run lint && echo Using TypeScript && tsc --version",
     "build": "tsc --pretty",
@@ -56,15 +56,12 @@
     "@types/jest": "^25.1.2",
     "@types/lodash": "^4.14.82",
     "@types/node": "^13.7.1",
-    "@typescript-eslint/eslint-plugin": "^2.20.0",
-    "@typescript-eslint/parser": "^2.20.0",
-    "eslint": "^6.8.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-prettier": "^6.10.0",
     "jest": "^25.1.0",
     "prettier": "^1.7.4",
     "rimraf": "^3.0.2",
     "ts-jest": "^25.2.0",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.16.0",
     "typescript": "^3.1.6"
   },
   "engines": {

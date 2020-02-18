@@ -1,4 +1,5 @@
-import markdownItMermaidLess = require('markdown-it-mermaid-less');
+/* eslint-disable no-irregular-whitespace */
+
 import { Markdown2HtmlLess } from './markdown2htmlLess';
 const taskList: string = `#### GFM task list
 - [x] GFM task list 1
@@ -20,6 +21,7 @@ const mermaid: string = `
     C-->D;
 \`\`\`
     `;
+
 const mixed: string = `
 #### GFM task list
 - [x] GFM task list 1
