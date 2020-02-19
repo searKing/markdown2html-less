@@ -1,6 +1,6 @@
 {
   "name": "markdown2html-less",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A parser of Markdown and a render to html,  Which needs to be previewed in a browser",
   "license": "MIT",
   "repository": "https://github.com/searKing/markdown2html-less",
@@ -55,11 +55,11 @@
   "devDependencies": {
     "@types/jest": "^25.1.2",
     "@types/lodash": "^4.14.82",
-    "@types/node": "^13.7.1",
+    "@types/node": "^13.7.2",
     "jest": "^25.1.0",
     "prettier": "^1.7.4",
     "rimraf": "^3.0.2",
-    "ts-jest": "^25.2.0",
+    "ts-jest": "^25.2.1",
     "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.16.0",
     "typescript": "^3.1.6"
