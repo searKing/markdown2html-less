@@ -32,10 +32,9 @@ export interface IMermaid2htmlReturn {
 export declare class MarkdownRender implements IMarkdownRender {
     private modules;
     private options;
-    private mermaidOptions;
+    private readonly mermaidOptions;
     constructor(options?: IMarkdownRenderOptions);
     renderToHtml(mdContent: string): IMermaid2htmlReturn;
-    private getInitOptions;
     private loadModules;
     private getRenderer;
 }

@@ -1,6 +1,5 @@
-import { IMermaid2htmlReturn } from './render/render';
-import { IDefaultOptions } from './utils/configuration';
-import './utils/json';
+import { IMermaid2htmlReturn } from "./render/render";
+import { IDefaultOptions } from "./utils/configuration";
 export interface IMarkdown2HtmlLess {
     markdown2html(markdown: string): IMermaid2htmlReturn;
 }

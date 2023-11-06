@@ -1,4 +1,4 @@
-import './utils/json';
+import "./utils/json";
 export interface IDefaultOptions {
     debug?: boolean;
     emoji?: boolean;

@@ -1,6 +1,6 @@
 /* eslint-disable no-irregular-whitespace */
 
-import { Markdown2HtmlLess } from './markdown2htmlLess';
+import { Markdown2HtmlLess } from "./markdown2htmlLess";
 const taskList: string = `#### GFM task list
 - [x] GFM task list 1
 - [x] GFM task list 2
@@ -43,23 +43,23 @@ graph LR;
 \`\`\`
 `;
 ((markdownContent: string) => {
-  const markdown2htmlPro = new Markdown2HtmlLess();
-  const html = markdown2htmlPro.markdown2html(markdownContent);
+	const markdown2htmlPro = new Markdown2HtmlLess();
+	const html = markdown2htmlPro.markdown2html(markdownContent);
 
-  console.log('html = ', html);
-  return html;
+	console.log("html = ", html);
+	return html;
 })(taskList);
 ((markdownContent: string) => {
-  const markdown2htmlPro = new Markdown2HtmlLess();
-  const html = markdown2htmlPro.markdown2html(markdownContent);
+	const markdown2htmlPro = new Markdown2HtmlLess();
+	const html = markdown2htmlPro.markdown2html(markdownContent);
 
-  console.log('html = ', html);
-  return html;
+	console.log("html = ", html);
+	return html;
 })(mermaid);
 ((markdownContent: string) => {
-  const markdown2htmlPro = new Markdown2HtmlLess();
-  const html = markdown2htmlPro.markdown2html(markdownContent);
+	const markdown2htmlPro = new Markdown2HtmlLess();
+	const html = markdown2htmlPro.markdown2html(markdownContent);
 
-  console.log('html = ', html);
-  return html;
+	console.log("html = ", html);
+	return html;
 })(mixed);
