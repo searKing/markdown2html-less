@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "markdown-it": "^13.0.2",
+    "markdown-it": "^14.1.1",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-anchor": "^8.6.7",
     "markdown-it-attrs": "^4.1.6",
